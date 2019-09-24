@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float smoothTime;
 
     //current velocity
-    public Vector2 velocity;
+    private Vector2 velocity;
 
     //components
     private Rigidbody2D rb;
