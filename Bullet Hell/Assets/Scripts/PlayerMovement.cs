@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         //zero's velocity
-        velocity = Vector2.zero;
+        velocity = Vector2.zero; 
     }
 
     //called at a fixed time interval
@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
         //gets state of movement axis
         float horiz = Input.GetAxis("Horizontal");
         float vert = Input.GetAxis("Vertical");
+
+        
 
         //creates target movement vector
         Vector2 shift = new Vector2(horiz * xVel, vert * yVel);
