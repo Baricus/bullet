@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameObject ball;
     //movement speed variables
-    public float xVel;
+    public float xVel;//vel meaning velocity
     public float yVel;
 
     //smoothing variable
@@ -32,10 +33,10 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         //gets state of movement axis
-        float horiz = Input.GetAxis("Horizontal");
+        float horiz = Input.GetAxis("Horizontal");//will this allow me to get shoot input?
         float vert = Input.GetAxis("Vertical");
 
-        
+        Shoot();
 
         //creates target movement vector
         Vector2 shift = new Vector2(horiz * xVel, vert * yVel);
@@ -51,5 +52,17 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         
+    }
+
+
+
+    void Shoot()
+    {
+        if( Input.GetAxis("FireL")>0)
+        {
+            Instantiate(ball, new Vector3(rb.position.x,rb.position.y, this.transform.position.z), new Quaternion(0, 0, 0, 0));
+        }
+
+
     }
 }
