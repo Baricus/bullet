@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 394}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -44,8 +44,8 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 679, y: 322}
-  m_MaxSize: {x: 12004, y: 8022}
+  m_MinSize: {x: 679, y: 344}
+  m_MaxSize: {x: 12004, y: 8044}
   vertical: 0
   controlID: 53
 --- !u!114 &3
@@ -216,8 +216,8 @@ MonoBehaviour:
     y: 0
     width: 1098
     height: 731
-  m_MinSize: {x: 404, y: 322}
-  m_MaxSize: {x: 8004, y: 8022}
+  m_MinSize: {x: 404, y: 344}
+  m_MaxSize: {x: 8004, y: 8044}
   vertical: 1
   controlID: 54
 --- !u!114 &10
@@ -354,9 +354,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 670
-    width: 1531
-    height: 371
+    y: 515.2
+    width: 1098
+    height: 270
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -371,20 +371,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: F:\Documents\GitHub\bullet\Bullet Hell
+  m_LastProjectPath: D:\GitHub based projects\bullet\Bullet Hell
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a42f0000
-    m_LastClickedID: 12196
-    m_ExpandedIDs: 00000000a62d0000
+    m_SelectedIDs: 7c2e0000
+    m_LastClickedID: 11900
+    m_ExpandedIDs: 00000000322d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -412,7 +412,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a62d0000
+    m_ExpandedIDs: 00000000322d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -437,9 +437,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 4cf4ffff
-    m_LastClickedInstanceID: -2996
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 72fbffff
+    m_LastClickedInstanceID: -1166
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -533,9 +533,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0a320000
-      m_LastClickedID: 12810
-      m_ExpandedIDs: 3cfbffff
+      m_SelectedIDs: 72fbffff
+      m_LastClickedID: -1166
+      m_ExpandedIDs: 74fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -595,9 +595,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.2945063, y: 0.86831814, z: -37.969917}
+    m_Target: {x: 2.3143067, y: -0.4619785, z: -70.52383}
     speed: 2
-    m_Value: {x: 1.2945063, y: 0.86831814, z: -37.969917}
+    m_Value: {x: 2.3143067, y: -0.4619785, z: -70.52383}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -630,9 +630,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.682282
+    m_Target: 14.226904
     speed: 2
-    m_Value: 13.682282
+    m_Value: 14.226904
   m_Ortho:
     m_Target: 1
     speed: 2
