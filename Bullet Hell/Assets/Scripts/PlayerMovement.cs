@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
             float fireangle = Mathf.Atan2((ActualMousePosition.y-rb.position.y),(ActualMousePosition.x-rb.position.x));
 
 
-            Debug.Log("Firing angle " + fireangle*Mathf.Rad2Deg);
+            //Debug.Log("Firing angle " + fireangle*Mathf.Rad2Deg);
            //Debug.Log("coordinate of paddle" + rb.position);
            
             
