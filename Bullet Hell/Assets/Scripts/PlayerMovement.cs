@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : Shooter
 {
     public GameObject ball;
     //movement speed variables
@@ -39,8 +39,10 @@ public class PlayerMovement : MonoBehaviour
         //gets state of movement axis
         float horiz = Input.GetAxis("Horizontal");//will this allow me to get shoot input?
         float vert = Input.GetAxis("Vertical");
-
-        Shoot();
+        if (Input.GetAxis("FireL") > 0 && cooldowntime == 0)
+        {
+            Shoot();
+        }
 
         //creates target movement vector
         Vector2 shift = new Vector2(horiz * xVel, vert * yVel);
@@ -69,22 +71,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if( Input.GetAxis("FireL")>0 && cooldowntime==0)
         {
-           
+           //translates the mouse's position to actual coordinates
             ActualMousePosition = (Camera.main.ScreenToWorldPoint(Input.mousePosition));
-           GameObject newball= Instantiate(ball, new Vector3(rb.position.x,rb.position.y, this.transform.position.z), new Quaternion(0, 0, 0, 0));
-
-
-            //float fireangle = Vector2.Angle(new Vector2(ActualMousePosition.x, ActualMousePosition.y), rb.position);
+ 
+            //calculates the angle that the projectile will travel based on the player's location and the mouse's position
             float fireangle = Mathf.Atan2((ActualMousePosition.y-rb.position.y),(ActualMousePosition.x-rb.position.x));
 
-
-            //Debug.Log("Firing angle " + fireangle*Mathf.Rad2Deg);
-           //Debug.Log("coordinate of paddle" + rb.position);
-           
-            
-            
-            newball.GetComponent<Rigidbody2D>().velocity=new Vector2(Mathf.Cos(fireangle)*firevelocity,Mathf.Sin(fireangle)*firevelocity);
             cooldowntime = 60;
+            //fires the ball using the parent shooter's function shoot();
+            shoot(fireangle,firevelocity,ball, transform.position);
         }
 
 

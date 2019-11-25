@@ -63,10 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Attack.cs" />
     <Compile Include="Assets\Scripts\BallBounce.cs" />
     <Compile Include="Assets\Scripts\BrickCollide.cs" />
     <Compile Include="Assets\Scripts\BrickManager.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Shooter.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/GitHub based projects/bullet/Bullet Hell/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

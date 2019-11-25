@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BrickCollide : MonoBehaviour
+public class BrickCollide : Shooter
 {
     int health = 3;
 
