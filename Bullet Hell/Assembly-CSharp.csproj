@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\BallBounce.cs" />
     <Compile Include="Assets\Scripts\BrickCollide.cs" />
     <Compile Include="Assets\Scripts\BrickManager.cs" />
+    <Compile Include="Assets\Scripts\Enemies\FollowPath.cs" />
+    <Compile Include="Assets\Scripts\Enemies\NodeData.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>F:/Documents/GitHub/bullet/Bullet Hell/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
