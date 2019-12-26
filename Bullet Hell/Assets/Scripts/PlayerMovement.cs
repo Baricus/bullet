@@ -37,12 +37,13 @@ public class PlayerMovement : Shooter
     void FixedUpdate()
     {
         //gets state of movement axis
-        float horiz = Input.GetAxis("Horizontal");//will this allow me to get shoot input?
+        float horiz = Input.GetAxis("Horizontal");
         float vert = Input.GetAxis("Vertical");
         if (Input.GetAxis("FireL") > 0 && cooldowntime == 0)
         {
             Shoot();
         }
+        rotate();
 
         //creates target movement vector
         Vector2 shift = new Vector2(horiz * xVel, vert * yVel);
@@ -82,6 +83,21 @@ public class PlayerMovement : Shooter
             shoot(fireangle,firevelocity,ball, transform.position);
         }
 
+
+    }
+
+    void rotate()
+    {
+        if (Input.GetAxis("RotateL") > 0)
+        {
+            transform.Rotate(Vector3.forward * 5);
+
+        }
+        if (Input.GetAxis("RotateR") > 0)
+        {
+            transform.Rotate(Vector3.forward * -5);
+
+        }
 
     }
 }
